@@ -1,0 +1,135 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.misl.DOS:DOS >--------------------------
+[INFO] Building DOS 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ DOS ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ DOS ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ DOS ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\User\Desktop\DOS\DOS\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ DOS ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ DOS ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.misl.DOS.ApplicationTests
+20:43:48.295 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.misl.DOS.ApplicationTests]
+20:43:48.295 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:43:48.295 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:43:48.311 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.misl.DOS.ApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:43:48.326 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.misl.DOS.ApplicationTests], using SpringBootContextLoader
+20:43:48.326 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.misl.DOS.ApplicationTests]: class path resource [com/misl/DOS/ApplicationTests-context.xml] does not exist
+20:43:48.326 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.misl.DOS.ApplicationTests]: class path resource [com/misl/DOS/ApplicationTestsContext.groovy] does not exist
+20:43:48.326 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.misl.DOS.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:43:48.326 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.misl.DOS.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:43:48.373 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.misl.DOS.ApplicationTests]
+20:43:48.420 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\User\Desktop\DOS\DOS\target\classes\com\misl\DOS\Application.class]
+20:43:48.420 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.misl.DOS.Application for test class com.misl.DOS.ApplicationTests
+20:43:48.483 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.misl.DOS.ApplicationTests]: using defaults.
+20:43:48.483 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:43:48.498 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6574a52c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c1a5b54, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1c7696c6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@60099951, org.springframework.test.context.support.DirtiesContextTestExecutionListener@20140db9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e6a3214, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@368247b9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a6d8329, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1a942c18, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55a147cc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71ba6d4e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@738dc9b]
+20:43:48.498 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.misl.DOS.ApplicationTests]
+20:43:48.498 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.misl.DOS.ApplicationTests]
+20:43:48.498 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.misl.DOS.ApplicationTests]
+20:43:48.498 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.misl.DOS.ApplicationTests]
+20:43:48.498 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.misl.DOS.ApplicationTests]
+20:43:48.498 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.misl.DOS.ApplicationTests]
+20:43:48.514 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@793f29ff testClass = ApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3e8c3cb testClass = ApplicationTests, locations = '{}', classes = '{class com.misl.DOS.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f112965, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@d4342c2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@778d1062, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1184ab05], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+20:43:48.514 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.misl.DOS.ApplicationTests]
+20:43:48.514 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.misl.DOS.ApplicationTests]
+20:43:48.530 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2019-08-16 20:43:48.764  INFO 9708 --- [           main] com.misl.DOS.ApplicationTests            : Starting ApplicationTests on DESKTOP-V9V9PJ1 with PID 9708 (started by User in C:\Users\User\Desktop\DOS\DOS)
+2019-08-16 20:43:48.764  INFO 9708 --- [           main] com.misl.DOS.ApplicationTests            : No active profile set, falling back to default profiles: default
+2019-08-16 20:43:49.420  INFO 9708 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-16 20:43:49.483  INFO 9708 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 1 repository interfaces.
+2019-08-16 20:43:49.811  INFO 9708 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e269dc0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-16 20:43:50.045  INFO 9708 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-16 20:43:50.217  INFO 9708 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-16 20:43:50.311  INFO 9708 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-16 20:43:50.373  INFO 9708 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-16 20:43:50.373  INFO 9708 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-16 20:43:50.514  INFO 9708 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-16 20:43:50.733  INFO 9708 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-16 20:43:51.295  INFO 9708 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@550fa96f'
+2019-08-16 20:43:51.295  INFO 9708 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-16 20:43:52.217  INFO 9708 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-16 20:43:52.264  WARN 9708 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-16 20:43:52.623  INFO 9708 --- [           main] com.misl.DOS.ApplicationTests            : Started ApplicationTests in 4.093 seconds (JVM running for 4.694)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.562 s - in com.misl.DOS.ApplicationTests
+2019-08-16 20:43:52.795  INFO 9708 --- [       Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-16 20:43:52.795  INFO 9708 --- [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-16 20:43:52.795  INFO 9708 --- [       Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-16 20:43:52.795  INFO 9708 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-16 20:43:52.811  INFO 9708 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ DOS ---
+[INFO] Building jar: C:\Users\User\Desktop\DOS\DOS\target\DOS-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.7.RELEASE:repackage (repackage) @ DOS ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ DOS ---
+[INFO] Installing C:\Users\User\Desktop\DOS\DOS\target\DOS-0.0.1-SNAPSHOT.jar to C:\Users\User\.m2\repository\com\misl\DOS\DOS\0.0.1-SNAPSHOT\DOS-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Users\User\Desktop\DOS\DOS\pom.xml to C:\Users\User\.m2\repository\com\misl\DOS\DOS\0.0.1-SNAPSHOT\DOS-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ DOS ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ DOS ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ DOS ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\User\Desktop\DOS\DOS\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ DOS ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ DOS ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ DOS ---
+[INFO] Building jar: C:\Users\User\Desktop\DOS\DOS\target\DOS-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.7.RELEASE:repackage (repackage) @ DOS ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ DOS ---
+[INFO] Installing C:\Users\User\Desktop\DOS\DOS\target\DOS-0.0.1-SNAPSHOT.jar to C:\Users\User\.m2\repository\com\misl\DOS\DOS\0.0.1-SNAPSHOT\DOS-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Users\User\Desktop\DOS\DOS\pom.xml to C:\Users\User\.m2\repository\com\misl\DOS\DOS\0.0.1-SNAPSHOT\DOS-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.890 s
+[INFO] Finished at: 2019-08-16T20:43:54+06:00
+[INFO] ------------------------------------------------------------------------
