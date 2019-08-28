@@ -7,13 +7,19 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateNidComponent } from './create-nid/create-nid.component';
+import { NidDetailsComponent } from './nid-details/nid-details.component';
+import { NidListComponent } from './nid-list/nid-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateUserComponent,
     UserDetailsComponent,
-    UserListComponent
+    UserListComponent,
+    CreateNidComponent,
+    NidDetailsComponent,
+    NidListComponent
   ],
   imports: [
     BrowserModule,

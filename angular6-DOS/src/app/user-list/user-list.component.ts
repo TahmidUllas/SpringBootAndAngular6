@@ -1,6 +1,8 @@
 import { Observable } from "rxjs";
 import { UserService } from "./../user.service";
 import { DosUser } from "./../user";
+import { nid } from "./../nid";
+import { nidService } from "./../nid.service";
 import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
 
@@ -31,5 +33,14 @@ export class UserListComponent implements OnInit {
           this.reloadData();
         },
         error => console.log(error));
+  }
+  public gotoNidCreate(url, id) {
+    this.router.navigate([url, id]).then( (e) => {
+      if (e) {
+        console.log("Navigation is successful!");
+      } else {
+        console.log("Navigation has failed!");
+      }
+    });
   }
 }

@@ -5,4 +5,3 @@ describe('DosUser', () => {
     expect(new DosUser()).toBeTruthy();
   });
 });
-s
