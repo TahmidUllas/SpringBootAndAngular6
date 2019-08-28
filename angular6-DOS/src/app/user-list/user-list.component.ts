@@ -2,7 +2,7 @@ import { Observable } from "rxjs";
 import { UserService } from "./../user.service";
 import { DosUser } from "./../user";
 import { nid } from "./../nid";
-import { nidService } from "./../nid.service";
+import { NidService } from "./../nid.service";
 import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
 
