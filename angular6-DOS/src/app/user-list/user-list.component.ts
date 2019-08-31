@@ -34,8 +34,8 @@ export class UserListComponent implements OnInit {
         },
         error => console.log(error));
   }
-  public gotoNidCreate(url, id) {
-    this.router.navigate([url, id]).then( (e) => {
+  public gotoNidCreate(url) {
+    this.router.navigate([url]).then( (e) => {
       if (e) {
         console.log("Navigation is successful!");
       } else {

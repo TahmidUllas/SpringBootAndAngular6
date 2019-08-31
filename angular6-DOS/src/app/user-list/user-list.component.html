@@ -15,8 +15,9 @@
                 <tr *ngFor="let user of users | async">
                     <td>{{user.name}}</td>
                     <td>{{user.emailId}}</td>
-                    <td><button (click)="deleteUser(user.id)">Delete</button></td>
-                    <td><button (click)="gotoNidCreate('/addNid',user.id)">Add NID</button></td>
+                    <td><button (click)="deleteUser(user.id)">Delete</button>
+                        <button (click)="gotoNidCreate('/addNid')">Add NID</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
