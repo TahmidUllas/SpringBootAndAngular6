@@ -1,6 +1,5 @@
 import { NidService } from './../nid.service';
 import { nid } from './../nid';
-import { DosUser } from './../user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

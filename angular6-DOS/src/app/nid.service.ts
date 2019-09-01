@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class NidService {
 
-  private baseUrl = '/api/v1/nids';
+  private baseUrl = '/api/v1/NIDs';
 
   constructor(private http: HttpClient) { }
 
