@@ -12,6 +12,7 @@ public class NID {
     private String fatherName;
     private String motherName;
     private String dateOfBirth;
+    private String filePath;
 
     public NID() {
 
@@ -81,10 +82,19 @@ public class NID {
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
+
+    @Column(name = "filePath", nullable = true)
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
     @Override
     public String toString() {
         return "UserNid [id=" + id + ", NID Number=" + idN +", User Id="+ userID + ", Name=" + name + ", father's " +
                 "Name=" + fatherName + ", Mother's name=" + motherName + ", Date Of Birth =" + dateOfBirth+"]";
     }
-
 }

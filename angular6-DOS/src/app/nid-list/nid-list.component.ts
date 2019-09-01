@@ -1,7 +1,7 @@
 import { Observable } from "rxjs";
 import { UserService } from "./../user.service";
 import { DosUser } from "./../user";
-import { nid } from "./../nid";
+import { Nid } from "./../nid";
 import { NidService } from "./../nid.service";
 import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class NidListComponent implements OnInit {
 
-  NIDs: Observable<nid[]>;
+  NIDs: Observable<Nid[]>;
 
   constructor(private nidService: NidService,private router: Router) {}
 
@@ -33,5 +33,15 @@ export class NidListComponent implements OnInit {
           this.reloadData();
         },
         error => console.log(error));
+  }
+
+    public gotoNidUpload(url) {
+    this.router.navigate([url]).then( (e) => {
+      if (e) {
+        console.log("Navigation is successful!");
+      } else {
+        console.log("Navigation has failed!");
+      }
+    });
   }
 }

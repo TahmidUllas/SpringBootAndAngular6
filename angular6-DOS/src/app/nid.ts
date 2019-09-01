@@ -1,4 +1,5 @@
-export class nid {
+export class Nid {
+
     id: number;
     idN: number;
     userID: number;

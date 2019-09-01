@@ -15,8 +15,8 @@ export class NidService {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
-  createNid(nid: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}`, nid);
+  createNid(Nid: Object): Observable<Object> {
+    return this.http.post(`${this.baseUrl}`, Nid);
   }
 
   updateNid(id: number, value: any): Observable<Object> {

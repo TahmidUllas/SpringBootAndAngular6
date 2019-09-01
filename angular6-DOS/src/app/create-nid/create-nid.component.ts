@@ -1,5 +1,5 @@
 import { NidService } from './../nid.service';
-import { nid } from './../nid';
+import { Nid } from './../nid';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateNidComponent implements OnInit {
 
-  nidU: nid = new nid();
+  nidU: Nid = new Nid();
   submitted = false;
 
   constructor(private nidService: NidService) { }
@@ -19,17 +19,18 @@ export class CreateNidComponent implements OnInit {
 
   newNid(): void {
     this.submitted = false;
-    this.nidU = new nid();
+    this.nidU = new Nid();
   }
 
   save() {
     this.nidService.createNid(this.nidU)
       .subscribe(data => console.log(data), error => console.log(error));
-    this.nidU = new nid();
+    this.nidU = new Nid();
   }
 
   onSubmit() {
     this.submitted = true;
     this.save();
   }
+
 }

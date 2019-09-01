@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateNidComponent } from './create-nid/create-nid.component';
 import { NidDetailsComponent } from './nid-details/nid-details.component';
 import { NidListComponent } from './nid-list/nid-list.component';
+import { FormUploadComponent } from './upload/form-upload/form-upload.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NidListComponent } from './nid-list/nid-list.component';
     UserListComponent,
     CreateNidComponent,
     NidDetailsComponent,
-    NidListComponent
+    NidListComponent,
+    FormUploadComponent
   ],
   imports: [
     BrowserModule,
