@@ -71,7 +71,7 @@ public class NIDController {
 
         nidRepository.delete(userNid);
         Map<String, Boolean> response = new HashMap<>();
-        response.put("deleted", Boolean.TRUE);cd 
+        response.put("deleted", Boolean.TRUE);
         return response;
     }
 }
