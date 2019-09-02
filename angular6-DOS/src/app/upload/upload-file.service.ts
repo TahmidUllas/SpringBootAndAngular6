@@ -9,12 +9,12 @@ export class UploadFileService {
 
   constructor(private http: HttpClient) { }
 
-  pushFileToStorage(file: File): Observable<HttpEvent<{}>> {
+  pushFileToStorage(file: File,id: number): Observable<HttpEvent<{}>> {
     const formdata: FormData = new FormData();
 
     formdata.append('file', file);
-
-    const req = new HttpRequest('POST', '/post', formdata, {
+    
+    const req = new HttpRequest('POST', `api/v1/post/${id}`, formdata, {
       reportProgress: true,
       responseType: 'text'
     });

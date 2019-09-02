@@ -11,6 +11,9 @@ import { CreateNidComponent } from './create-nid/create-nid.component';
 import { NidDetailsComponent } from './nid-details/nid-details.component';
 import { NidListComponent } from './nid-list/nid-list.component';
 import { FormUploadComponent } from './upload/form-upload/form-upload.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FormUploadComponent } from './upload/form-upload/form-upload.component'
     CreateNidComponent,
     NidDetailsComponent,
     NidListComponent,
-    FormUploadComponent
+    FormUploadComponent,
+    LoginComponent,
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

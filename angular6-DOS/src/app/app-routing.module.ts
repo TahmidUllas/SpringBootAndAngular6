@@ -6,14 +6,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserListComponent } from './user-list/user-list.component';
 import { NidListComponent } from './nid-list/nid-list.component';
 import { FormUploadComponent } from './upload/form-upload/form-upload.component'
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'user', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'users', component: UserListComponent },
   { path: 'add', component: CreateUserComponent },
   { path: 'addNid', component: CreateNidComponent},
   { path: 'NIDs', component: NidListComponent },
-  { path: 'post', component: FormUploadComponent },
+  { path: 'post/:id', component: FormUploadComponent },
+  { path: 'auth/login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'signup', component: RegisterComponent },
 ];
 
 @NgModule({

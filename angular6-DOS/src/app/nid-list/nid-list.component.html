@@ -24,7 +24,7 @@
                     <td>{{nid.motherName}}</td>
                     <td>{{nid.dateOfBirth}}</td>
                     <td><button (click)="deleteNid(nid.id)">Delete</button>
-                        <button (click)="gotoNidUpload('/post')">Upload NID</button>
+                        <button (click)="gotoNidUpload('/post',nid.id)">Upload NID</button>
                     </td>
                 </tr>
             </tbody>

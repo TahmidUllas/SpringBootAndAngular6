@@ -5,13 +5,16 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding: 5px; margin-top: 5px;">
         <!-- Links -->
         <ul class="navbar-nav">
-            <li class="nav-item">
+            <li  class="nav-item">
+                <a routerLink="home" class="btn btn-primary active" role="button" routerLinkActive="active">Home</a>
+            </li>
+            <li *ngIf="authority === 'admin'" class="nav-item">
                 <a routerLink="users" class="btn btn-primary active" role="button" routerLinkActive="active">Users</a>
             </li>
-            <li class="nav-item" style="margin-left: 10px;">
+            <li *ngIf="authority === 'admin'" class="nav-item" style="margin-left: 10px;">
                 <a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
             </li>
-            <li class="nav-item" style="margin-left: 10px;">
+            <li *ngIf="authority === 'admin'" class="nav-item" style="margin-left: 10px;">
                 <a routerLink="NIDs" class="btn btn-primary active" role="button" routerLinkActive="active">NID List</a>
             </li>
         </ul>
