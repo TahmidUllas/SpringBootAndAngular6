@@ -15,13 +15,13 @@ import org.hibernate.annotations.NaturalId;
                 "username"
         }),
         @UniqueConstraint(columnNames = {
-                "email"
+                "emailId"
         })
 })
 public class DosUser {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @NotBlank

@@ -34,16 +34,13 @@ public class UploadController {
 
     List<String> files = new ArrayList<String>();
 
-    @PostMapping("/post/{id}")
-    public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile file, @PathVariable(value = "id") Long nidId) {
+    @PostMapping("/postNid")
+    public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile file) {
         String message = "";
         try {
             storageService.store(file);
             files.add(file.getOriginalFilename());
 
-            NID userNid = nidRepository.findById(nidId)
-                    .orElseThrow(() -> new ResourceNotFoundException("nid not found for this id :: " + nidId));
-            userNid.setFilePath("/upload-dir/"+file.getOriginalFilename());
             message = "You successfully uploaded " + file.getOriginalFilename() + "!";
             return ResponseEntity.status(HttpStatus.OK).body(message);
         } catch (Exception e) {

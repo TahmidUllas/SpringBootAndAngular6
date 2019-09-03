@@ -35,9 +35,8 @@ export class NidListComponent implements OnInit {
         error => console.log(error));
   }
 
-    public gotoNidUpload(url,id) {
-    var myurl=`${url}/${id}`
-    this.router.navigate([myurl]).then( (e) => {
+    public gotoNidUpload(url) {
+    this.router.navigate([url]).then( (e) => {
       if (e) {
         console.log("Navigation is successful!");
       } else {

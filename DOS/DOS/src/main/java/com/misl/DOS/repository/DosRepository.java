@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DosRepository extends JpaRepository<DosUser, Long>{
     Optional<DosUser> findByUsername(String username);
+    Optional<DosUser> findById(Long id);
     Boolean existsByUsername(String username);
-    Boolean existsByEmail(String email);
+    Boolean existsByEmailId(String emailId);
 }

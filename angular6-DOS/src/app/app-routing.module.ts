@@ -16,8 +16,8 @@ const routes: Routes = [
   { path: 'add', component: CreateUserComponent },
   { path: 'addNid', component: CreateNidComponent},
   { path: 'NIDs', component: NidListComponent },
-  { path: 'post/:id', component: FormUploadComponent },
-  { path: 'auth/login', component: LoginComponent },
+  { path: 'postNid', component: FormUploadComponent },
+  { path: 'signin', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: RegisterComponent },
 ];

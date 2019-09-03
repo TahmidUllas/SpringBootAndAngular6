@@ -20,7 +20,7 @@ public class UserPrinciple implements UserDetails {
 
     private String username;
 
-    private String email;
+    private String emailId;
 
     @JsonIgnore
     private String password;
@@ -28,12 +28,12 @@ public class UserPrinciple implements UserDetails {
     private Collection<? extends GrantedAuthority> authorities;
 
     public UserPrinciple(Long id, String name, 
-			    		String username, String email, String password, 
+			    		String username, String emailId, String password,
 			    		Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.name = name;
         this.username = username;
-        this.email = email;
+        this.emailId = emailId;
         this.password = password;
         this.authorities = authorities;
     }
@@ -61,8 +61,8 @@ public class UserPrinciple implements UserDetails {
         return name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailId() {
+        return emailId;
     }
 
     @Override
